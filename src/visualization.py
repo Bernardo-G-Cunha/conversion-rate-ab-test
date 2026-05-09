@@ -51,3 +51,13 @@ def plot_group_distribution_over_time(
     plt.xticks(rotation=45)
     plt.tight_layout()
     plt.show()
+
+
+def plot_conversion_rates(conversion_rates):
+    
+    plt.bar(["Control", "Treatment"], conversion_rates)
+
+    plt.title("Conversion Rate by Group")
+    plt.ylabel("Conversion Rate")
+
+    plt.show()
