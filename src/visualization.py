@@ -61,3 +61,26 @@ def plot_conversion_rates(conversion_rates):
     plt.ylabel("Conversion Rate")
 
     plt.show()
+
+
+def plot_segment_conversion(df, segment_col):
+    """
+    Plot conversion rates by segment and experimental group.
+    """
+
+    conversion = (
+        df.groupby([segment_col, "group"])["converted"]
+        .mean()
+        .unstack()
+    )
+
+    conversion.plot(kind="bar")
+
+    plt.ylabel("Conversion Rate")
+    plt.title(f"Conversion Rate by {segment_col}")
+    plt.xticks(rotation=0)
+
+    plt.legend(title="Group")
+
+    plt.tight_layout()
+    plt.show()

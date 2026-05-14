@@ -1,3 +1,3 @@
 from src.validation import chi_square_group_test, t_test
-from src.visualization import plot_group_distribution_over_time, plot_conversion_rates
-from src.stats import conversion_ztest, confidence_interval
+from src.visualization import plot_group_distribution_over_time, plot_conversion_rates, plot_segment_conversion
+from src.stats import conversion_ztest, confidence_interval, segment_ztest, logistic_segment_interaction
