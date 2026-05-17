@@ -56,7 +56,13 @@ The dataset contains user-level experimental observations, including:
 | `pages_visited`    | Number of pages visited                                  |
 
 ---
+## Dataset Source
 
+The dataset used in this project was obtained from Kaggle.
+
+Source: [A/B Testing](https://www.kaggle.com/datasets/aadbutt/ab-testing)
+
+---
 ## Project Structure
 
 ```text
